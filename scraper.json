@@ -1,4 +1,6 @@
 {"output": "output/",
+	 "repeat": 4,
+	 "delay": 45,
 	 "url": "https://quizlet.com/dev/l3/data",
 	 "log_file": "scraper.log",
-	 "last_id": 0}
+	 "last_id": 32640713}
