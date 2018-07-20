@@ -51,6 +51,7 @@ for loop in range(CONFIG['repeat']):
 			f.write(string)
 	except Exception as error:
 		log('Failed with exception: %s' % error)
-	log('Sleeping for %s seconds' % (CONFIG['delay']))
-	time.sleep(CONFIG['delay'])
+	if loop != CONFIG['repeat'] - 1:
+		log('Sleeping for %s seconds' % (CONFIG['delay']))
+		time.sleep(CONFIG['delay'])
 log('JOB FINISHED')
